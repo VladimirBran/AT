@@ -5,7 +5,8 @@ import time
 try:
     browser = webdriver.Chrome()
     browser.get("http://suninjuly.github.io/huge_form.html")
-    elements = browser.find_elements(By.CSS_SELECTOR, "input.first")
+    elements = browser.find_elements(By.TAG_NAME, "input")
+    # поле ввода можно обобщить тегом input
     for element in elements:
         element.send_keys("Bran")
 

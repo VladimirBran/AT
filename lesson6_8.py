@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-link = "http://suninjuly.github.io/simple_form_find_task.html"
+link = "http://suninjuly.github.io/find_xpath_form"
 
 try:
     browser = webdriver.Chrome()
@@ -19,7 +19,7 @@ try:
     input3.send_keys("Seversk")
     input4 = browser.find_element(By.CSS_SELECTOR, "div:nth-child(4) > input")
     input4.send_keys("Mandalor")
-    button = browser.find_element(By.CSS_SELECTOR, "button.btn")
+    button = browser.find_element(By.XPATH, "/html/body/div/form/div[6]/button[3]")
     button.click()
 
 finally:
