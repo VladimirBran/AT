@@ -10,8 +10,6 @@ try:
     time.sleep(10)  # добавить эту строку после запуска браузера
     browser.get(link)
 
-
-
     input1 = browser.find_element(By.CSS_SELECTOR, "div.mail > input[type=mail]")
     input1.send_keys("boberkurwa@mail.ru")
     input2 = browser.find_element(By.CSS_SELECTOR, "div.password > input[type=password]")

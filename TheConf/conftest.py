@@ -6,6 +6,9 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+login_user = "mops144@mail.ru"
+password_user = "1234567!Dv"
+
 @pytest.fixture(scope="function")
 def browser():
     print("\nstart browser for test..")
